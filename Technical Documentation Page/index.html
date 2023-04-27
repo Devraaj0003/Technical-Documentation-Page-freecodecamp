@@ -1,0 +1,157 @@
+<html>
+  <head>
+    <title>Technical Documentation Page</title>
+    <link href="styles.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <nav id="navbar">
+    <header>JavaScript Documentation</header>
+    <a href="#Javascript" class="nav-link">javaScript</a>
+    <a href="#Variables" class="nav-link">Variables</a>
+    <a href="#Data_types" class="nav-link">Data types</a>
+    <a href="#Control_statements" class="nav-link">Control statements</a>
+    <a href="#Concepts" class="nav-link">Concepts</a>
+  </nav>
+      <main id="main-doc">
+        <section class="main-section" id="Javascript">
+          <header> Javascript
+          </header>
+          <p>JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.
+
+JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements </p>
+        </section>
+
+         <section class="main-section" id="Variables">
+          <header>Variables
+          </header>
+              <p>You use variables as symbolic names for values in your application. The names of variables, called
+        identifiers, conform to certain rules.</p>
+      <p>A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters
+        can
+        also be digits (0-9). Because JavaScript is case sensitive, letters include the characters "A" through "Z"
+        (uppercase) and the characters "a" through "z" (lowercase).</p>
+      <p>You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the Unicode escape
+        sequences as characters in identifiers. Some examples of legal names are Number_hits, temp99, and _name.</p>
+        </section>
+
+         <section class="main-section" id="Data_types">
+          <header>Data Types
+          </header>
+          <p>
+        The latest ECMAScript standard defines seven data types:
+        <ul>
+          <li>Six data types that are primitives:
+            <ul>
+              <li>Boolean. true and false.</li>
+              <li>null. A special keyword denoting a null value. Because JavaScript is case-sensitive, null is not the
+                same as Null, NULL, or any other variant.</li>
+              <li>undefined. A top-level property whose value is undefined.</li>
+              <li>Number. 42 or 3.14159.</li>
+              <li>String. "Howdy"</li>
+              <li>Symbol (new in ECMAScript 2015). A data type whose instances are unique and immutable.</li>
+            </ul>
+          </li>
+         
+        </ul>
+      </p>
+      <p>Although these data types are a relatively small amount, they enable you to perform useful functions with your
+        applications.</p><p> Objects and functions are the other fundamental elements in the language. You can think of
+        objects as named containers for values, and functions as procedures that your application can perform.</p>
+        </section>
+
+         <section class="main-section" id="Control_statements">
+          <header>Control statements
+          </header>
+          <p>
+        Use the if statement to execute a statement if a logical condition is true. Use the optional else clause to
+        execute a statement if the condition is false. An if statement looks as follows:
+        <code>
+  if (condition) {
+
+    statement_1;
+  
+  } else {
+    
+    statement_2;
+  
+  }
+        </code>
+        </p><p>condition can be any expression that evaluates to true or false. See Boolean for an explanation of what
+        evaluates to true and false. If condition evaluates to true, statement_1 is executed; otherwise, statement_2 is
+        executed. statement_1 and statement_2 can be any statement, including further nested if statements.
+      </p>
+       <code>
+  if (condition_1) {
+            
+    statement_1;
+
+  } else if (condition_2) {
+    
+    statement_2;
+    
+  } else if (condition_n) {
+  
+    statement_n;
+  
+  } else {
+  
+    statement_last;
+  
+  } 
+        </code>
+      </p>
+      <p>
+        In the case of multiple conditions only the first logical condition which evaluates to true will be executed.
+        To execute multiple statements, group them within a block statement ({ ... }) . In general, it's good practice
+        to always use block statements, especially when nesting if statements:
+        <code>
+  if (condition) {
+
+    statement_1_runs_if_condition_is_true;
+
+    statement_2_runs_if_condition_is_true;
+
+  } else {
+
+    statement_3_runs_if_condition_is_false;
+
+    statement_4_runs_if_condition_is_false;
+
+  }
+        </code>
+      </p>
+      <p>
+        It is advisable to not use simple assignments in a conditional expression, because the assignment can be
+        confused with equality when glancing over the code. For example, do not use the following code:
+        <code>
+  if (x = y) { 
+    
+    /* statements here */
+  
+  }
+        </code>
+      </p>
+      <p>
+        If you need to use an assignment in a conditional expression, a common practice is to put additional
+        parentheses around the assignment. For example:
+        <code>
+  if ((x = y)) {
+  
+    /* statements here */
+  
+  }
+        </code>
+        </section>
+
+         <section class="main-section" id="Concepts">
+          <header>Concepts
+          </header><p>Often, programmers fall in love with Python because of the increased productivity it provides. Since there is no compilation step, the edit-test-debug cycle is incredibly fast. Debugging Python programs is easy: a bug or bad input will never cause a segmentation fault.</p><p> Instead, when the interpreter discovers an error, it raises an exception. When the program doesn't catch the exception, the interpreter prints a stack trace.</p><p> A source level debugger allows inspection of local and global variables, evaluation of arbitrary expressions, setting breakpoints, stepping through the code a line at a time, and so on. The debugger is written in Python itself, testifying to Python's introspective power.</p>
+        </section>
+
+        </main>
+        </body>
+        </html>
+
+     
+
